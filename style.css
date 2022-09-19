@@ -93,6 +93,13 @@ header img {
     display: flex;
 }
 
+footer {
+    background-color: black;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
 @media screen and (max-width:1200px) {
     .container {
