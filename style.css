@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'work sans', sans-serif;
+}
+
+
+.container {
+    width: 1200px;
+    height: 100%;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    background-color: black;
+    height: 100px;
+}
+
+header img {
+    width: 80px;
+    height: 75px;
+    border-radius: 250px;
+}
+
+.menu {
+    float: right;
+    margin-right: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu a {
+    padding: 10px;
+    border-radius: 5px;
+    color: aliceblue;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.3s linear;
+}
+
+.menu a:hover {
+    background: linear-gradient(180deg, rgb(214, 209, 185), transparent);
+    transform: scale(1.1);
+}
+
+.menu i {
+    margin-right: 5px;
+}
+
+.home {
+    color: brown;
+}
+
+.new {
+    color: rgb(33, 170, 188);
+}
+
+.cartShopping {
+    color: rgb(226, 131, 43);
+}
+
+.contato {
+    color: rgb(43, 226, 52);
+}
+
+.menu-btn {
+    cursor: pointer;
+    float: right;
+    margin-right: 10px;
+    height: 55px;
+    line-height: 55px !important;
+    color: aliceblue;
+    font-size: 30px;
+    display: none !important;
+}
+
+.img-carousel img {
+    width: 100vw;
+}
+
+#carousel img {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    max-height: 550px;
+}
+
+.car-active {
+    display: flex;
+}
+
+
+@media screen and (max-width:1200px) {
+    .container {
+        width: 90%;
+    }
+
+    .menu {
+        width: 50%;
+    }
+
+    .menu a {
+        font-size: 18px;
+    }
+
+    header img {
+        width: 70px;
+        height: 65px;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+    header img {
+        width: 60px;
+        height: 55px;
+    }
+
+    .menu-btn {
+        display: block !important;
+    }
+
+    .menu {
+        display: none;
+        width: 50%;
+        height: 50vh;
+        position: fixed;
+        top: 100px;
+        right: -35px;
+        padding: 15px;
+        background-color: rgb(57, 43, 43);
+    }
+
+    .menu::before {
+        content: '';
+        border-left: 10px solid transparent;
+        border-right: 10px solid transparent;
+        border-bottom: 10px solid rgb(57, 43, 43);
+        position: absolute;
+        top: -10px;
+        right: 40px;
+    }
+
+    .menu.menu-active {
+        display: block;
+    }
+
+    .menu a {
+        display: block;
+        margin: 10px 30px;
+        font-size: 16px;
+    }
+
+
+}
